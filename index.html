@@ -318,6 +318,19 @@
     .service-card:hover::before { transform: scaleX(1); }
     .service-card:hover { border-color: rgba(79,142,247,0.2); transform: translateY(-4px); }
 
+    .service-card.ai-card {
+      border-color: rgba(124,58,237,0.3);
+      background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(79,142,247,0.05));
+    }
+
+    .service-card.ai-card::before {
+      background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    }
+
+    .service-card.ai-card:hover {
+      border-color: rgba(124,58,237,0.5);
+    }
+
     .service-icon {
       width: 50px; height: 50px;
       background: rgba(79,142,247,0.1);
@@ -326,6 +339,11 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 1.4rem;
       margin-bottom: 1.25rem;
+    }
+
+    .service-icon.ai-icon {
+      background: rgba(124,58,237,0.15);
+      border-color: rgba(124,58,237,0.3);
     }
 
     .service-card h3 {
@@ -337,9 +355,102 @@
 
     .service-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
 
+    .new-badge {
+      display: inline-block;
+      background: var(--accent-2);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* ── AI SECTION ── */
+    .ai-section {
+      padding: 6rem 5%;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .ai-section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .ai-text h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+
+    .ai-text h2 span {
+      background: linear-gradient(135deg, #a78bfa, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ai-text p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .ai-text .btn-primary { margin-top: 1rem; }
+
+    .ai-topics {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .ai-topic {
+      background: var(--dark-3);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s;
+    }
+
+    .ai-topic:hover {
+      border-color: rgba(124,58,237,0.4);
+      transform: translateX(4px);
+    }
+
+    .ai-topic-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .ai-topic h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .ai-topic p { font-size: 0.82rem; color: var(--gray); margin: 0; }
+
     /* ── FEATURES ── */
     .features {
-      background: var(--dark-2);
+      background: var(--dark);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
       padding: 5rem 5%;
@@ -366,7 +477,7 @@
     .feature p { font-size: 0.88rem; color: var(--gray); }
 
     /* ── PRICING ── */
-    .pricing { padding: 6rem 5%; background: var(--dark); }
+    .pricing { padding: 6rem 5%; background: var(--dark-2); }
     .pricing-inner { max-width: 1100px; margin: 0 auto; }
 
     .pricing-grid {
@@ -377,7 +488,7 @@
     }
 
     .pricing-card {
-      background: var(--dark-2);
+      background: var(--dark-3);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 2.5rem;
@@ -444,14 +555,14 @@
     /* ── TESTIMONIALS ── */
     .testimonials {
       padding: 6rem 5%;
-      background: var(--dark-2);
+      background: var(--dark);
       border-top: 1px solid var(--border);
     }
 
     .testimonials-inner { max-width: 900px; margin: 0 auto; }
 
     .testimonial-card {
-      background: var(--dark-3);
+      background: var(--dark-2);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 2.5rem;
@@ -487,7 +598,7 @@
     }
 
     /* ── CONTACT ── */
-    .contact { padding: 6rem 5%; background: var(--dark); text-align: center; }
+    .contact { padding: 6rem 5%; background: var(--dark-2); text-align: center; border-top: 1px solid var(--border); }
     .contact-inner { max-width: 700px; margin: 0 auto; }
 
     .contact h2 {
@@ -527,7 +638,7 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--dark-2);
+      background: var(--dark);
       border-top: 1px solid var(--border);
       text-align: center;
       padding: 2.5rem 5%;
@@ -550,6 +661,10 @@
     .social-links a:hover { color: var(--accent); }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .ai-section-inner { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
     @media (max-width: 768px) {
       .hero { padding: 3rem 5% 4rem; min-height: auto; }
       .hero h1 { font-size: 2.4rem; }
@@ -589,7 +704,7 @@
     <div class="hero-content">
       <div class="hero-badge">⭐ Sioux Falls' Local Tech Experts</div>
       <h1>Your neighbors.<br><span>Your tech support.</span></h1>
-      <p>Family-owned & operated since 2020. We come to you — helping Sioux Falls residents with computers, phones, tablets, and smart devices.</p>
+      <p>Family-owned & operated since 2020. We come to you — helping Sioux Falls residents with computers, phones, tablets, smart devices, and now AI.</p>
       <div class="hero-buttons">
         <a href="tel:605-555-TECH" class="btn-primary">📞 (605) 555-TECH</a>
         <a href="#pricing" class="btn-outline">View Pricing</a>
@@ -667,6 +782,61 @@
           <h3>Security & Privacy</h3>
           <p>Password management, antivirus setup, privacy settings, and protecting against scams.</p>
         </div>
+        <div class="service-card ai-card">
+          <div class="service-icon ai-icon">🤖</div>
+          <h3>AI Training <span class="new-badge">New</span></h3>
+          <p>Learn how to use AI tools like ChatGPT, Siri, Alexa, and more — in plain English, at your own pace, in your own home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI SECTION -->
+  <section class="ai-section" id="ai">
+    <div class="ai-section-inner">
+      <div class="ai-text">
+        <p class="section-label">Now Offering</p>
+        <h2>AI is everywhere.<br>Let us show you<br><span>how to use it.</span></h2>
+        <p>AI tools like ChatGPT, Google Gemini, and Siri are changing how people get things done — but they can feel confusing and overwhelming at first. We break it all down in simple, friendly, one-on-one sessions right in your home.</p>
+        <p>No jargon. No judgment. Just a patient local neighbor helping you get the most out of the technology everyone's talking about.</p>
+        <a href="tel:605-555-TECH" class="btn-primary">📞 Book an AI Session</a>
+      </div>
+      <div class="ai-topics">
+        <div class="ai-topic">
+          <div class="ai-topic-icon">💬</div>
+          <div>
+            <h4>ChatGPT & AI Assistants</h4>
+            <p>How to ask questions, write emails, get answers, and save time with AI chatbots.</p>
+          </div>
+        </div>
+        <div class="ai-topic">
+          <div class="ai-topic-icon">🎙️</div>
+          <div>
+            <h4>Siri, Alexa & Google Assistant</h4>
+            <p>Get more out of the voice assistants already on your phone and in your home.</p>
+          </div>
+        </div>
+        <div class="ai-topic">
+          <div class="ai-topic-icon">🖼️</div>
+          <div>
+            <h4>AI Photo & Image Tools</h4>
+            <p>Enhance old photos, remove backgrounds, and create images with AI — no skills needed.</p>
+          </div>
+        </div>
+        <div class="ai-topic">
+          <div class="ai-topic-icon">🛡️</div>
+          <div>
+            <h4>Staying Safe with AI</h4>
+            <p>How to spot AI scams, deepfakes, and protect yourself from AI-powered fraud.</p>
+          </div>
+        </div>
+        <div class="ai-topic">
+          <div class="ai-topic-icon">📋</div>
+          <div>
+            <h4>AI for Everyday Tasks</h4>
+            <p>Use AI to write shopping lists, plan trips, get recipes, and simplify your day.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -724,6 +894,7 @@
             <li>Most common choice</li>
             <li>Multiple device support</li>
             <li>Training included</li>
+            <li>AI training available</li>
             <li>Written instructions provided</li>
             <li>Follow-up support via phone</li>
           </ul>
@@ -737,7 +908,7 @@
             <li>Unlimited phone support</li>
             <li>2 home visits included</li>
             <li>Priority scheduling</li>
-            <li>Perfect for seniors</li>
+            <li>AI training sessions included</li>
             <li>Family tech support</li>
           </ul>
           <a href="tel:605-555-TECH" class="btn-outline" style="width:100%;text-align:center;display:block;">Book Now</a>
@@ -810,7 +981,7 @@
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
     document.addEventListener('DOMContentLoaded', () => {
-      const cards = document.querySelectorAll('.service-card, .pricing-card, .testimonial-card, .why-card');
+      const cards = document.querySelectorAll('.service-card, .pricing-card, .testimonial-card, .why-card, .ai-topic');
       cards.forEach(card => {
         card.style.opacity = '0';
         card.style.transform = 'translateY(24px)';
