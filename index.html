@@ -28,7 +28,7 @@ body{
 
 /* Header */
 header{
-  background:var(--white);box-shadow:var(--shadow);position:fixed;width:100%;top:0;z-index:1000;animation:slideDown .5s ease-out;
+  background:var(--white);box-shadow:var(--shadow);position:relative;width:100%;top:0;z-index:1000;animation:slideDown .5s ease-out;
 }
 .top-banner{
   background:#10b981;color:#fff;text-align:center;padding:.5rem;font-weight:600;font-size:.875rem;
@@ -46,7 +46,7 @@ nav{display:flex;justify-content:center;align-items:center;padding:1rem 5%;max-w
 /* Hero */
 .hero{
   background:#ffffff;
-  padding:10rem 5% 4rem;text-align:center;color:var(--text-dark);position:relative;overflow:hidden;
+  padding:4rem 5%;text-align:center;color:var(--text-dark);position:relative;overflow:hidden;
 }
 .hero::before{
   content:'';position:absolute;inset:0;
@@ -125,12 +125,12 @@ footer{background:var(--text-dark);color:var(--white);text-align:center;padding:
 
 /* Responsive */
 @media (max-width:768px){
-  header{background:var(--white);position:fixed;top:0;width:100%;z-index:1000}
+  header{background:var(--white);position:relative;top:0;width:100%;z-index:1000}
   .top-banner{font-size:.75rem;padding:.4rem}
   nav{padding:.75rem;justify-content:center}
   .logo{font-size:1.25rem}
   .logo svg{width:24px;height:24px}
-  .hero{padding:7rem 1rem 3rem;margin-top:0}
+  .hero{padding:3rem 1rem;margin-top:0}
   .hero h1{font-size:1.75rem;line-height:1.2}
   .hero p{font-size:.95rem}
   .hero-buttons{flex-direction:column;align-items:center}
