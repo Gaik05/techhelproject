@@ -17,7 +17,6 @@
       --green: #10b981;
       --white: #ffffff;
       --gray: #9ca3af;
-      --light-bg: #f8fafc;
       --border: rgba(255,255,255,0.08);
     }
 
@@ -71,8 +70,7 @@
     }
 
     .logo-dot {
-      width: 8px;
-      height: 8px;
+      width: 8px; height: 8px;
       background: var(--accent);
       border-radius: 50%;
       display: inline-block;
@@ -104,16 +102,14 @@
     }
 
     .hero-bg {
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background:
         radial-gradient(ellipse 60% 50% at 70% 50%, rgba(79,142,247,0.12) 0%, transparent 70%),
         radial-gradient(ellipse 40% 40% at 20% 80%, rgba(124,58,237,0.08) 0%, transparent 60%);
     }
 
     .hero-grid {
-      position: absolute;
-      inset: 0;
+      position: absolute; inset: 0;
       background-image:
         linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
@@ -173,11 +169,7 @@
       font-weight: 300;
     }
 
-    .hero-buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
+    .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
 
     .btn-primary {
       background: var(--accent);
@@ -234,10 +226,7 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .why-local-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    .why-local-inner { max-width: 1200px; margin: 0 auto; }
 
     .section-label {
       font-size: 0.75rem;
@@ -271,10 +260,7 @@
       transition: all 0.3s;
     }
 
-    .why-card:hover {
-      border-color: rgba(79,142,247,0.3);
-      transform: translateY(-4px);
-    }
+    .why-card:hover { border-color: rgba(79,142,247,0.3); transform: translateY(-4px); }
 
     .why-icon { font-size: 2rem; margin-bottom: 1rem; }
 
@@ -283,7 +269,6 @@
       font-size: 1rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
-      color: var(--white);
     }
 
     .why-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
@@ -300,11 +285,7 @@
     }
 
     /* ── SERVICES ── */
-    .services {
-      padding: 6rem 5%;
-      background: var(--dark);
-    }
-
+    .services { padding: 6rem 5%; background: var(--dark); }
     .services-inner { max-width: 1200px; margin: 0 auto; }
 
     .services-grid {
@@ -356,7 +337,7 @@
 
     .service-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
 
-    /* ── FEATURES STRIP ── */
+    /* ── FEATURES ── */
     .features {
       background: var(--dark-2);
       border-top: 1px solid var(--border);
@@ -373,7 +354,6 @@
     }
 
     .feature { text-align: center; }
-
     .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; }
 
     .feature h3 {
@@ -386,11 +366,7 @@
     .feature p { font-size: 0.88rem; color: var(--gray); }
 
     /* ── PRICING ── */
-    .pricing {
-      padding: 6rem 5%;
-      background: var(--dark);
-    }
-
+    .pricing { padding: 6rem 5%; background: var(--dark); }
     .pricing-inner { max-width: 1100px; margin: 0 auto; }
 
     .pricing-grid {
@@ -416,8 +392,7 @@
 
     .popular-badge {
       position: absolute;
-      top: -14px;
-      left: 50%;
+      top: -14px; left: 50%;
       transform: translateX(-50%);
       background: var(--accent);
       color: #fff;
@@ -450,11 +425,7 @@
 
     .pricing-price span { font-size: 1rem; color: var(--gray); font-weight: 400; font-family: 'DM Sans', sans-serif; }
 
-    .pricing-divider {
-      height: 1px;
-      background: var(--border);
-      margin: 1.5rem 0;
-    }
+    .pricing-divider { height: 1px; background: var(--border); margin: 1.5rem 0; }
 
     .pricing-features { list-style: none; margin-bottom: 2rem; }
 
@@ -468,12 +439,7 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .pricing-features li::before {
-      content: '✓';
-      color: var(--green);
-      font-weight: 700;
-      flex-shrink: 0;
-    }
+    .pricing-features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
 
     /* ── TESTIMONIALS ── */
     .testimonials {
@@ -518,16 +484,10 @@
       font-family: 'Syne', sans-serif;
       font-weight: 700;
       font-size: 0.9rem;
-      color: var(--white);
     }
 
     /* ── CONTACT ── */
-    .contact {
-      padding: 6rem 5%;
-      background: var(--dark);
-      text-align: center;
-    }
-
+    .contact { padding: 6rem 5%; background: var(--dark); text-align: center; }
     .contact-inner { max-width: 700px; margin: 0 auto; }
 
     .contact h2 {
@@ -554,12 +514,7 @@
       50% { opacity: 0.7; }
     }
 
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin: 2rem 0;
-    }
+    .contact-info { display: flex; flex-direction: column; gap: 0.75rem; margin: 2rem 0; }
 
     .contact-item {
       display: flex;
@@ -585,24 +540,13 @@
       font-weight: 800;
       font-size: 1.2rem;
       margin-bottom: 1rem;
-      color: var(--white);
     }
 
     footer p { color: var(--gray); font-size: 0.82rem; margin-bottom: 0.4rem; }
 
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
 
-    .social-links a {
-      color: var(--gray);
-      font-size: 1.3rem;
-      transition: color 0.2s;
-    }
-
+    .social-links a { color: var(--gray); font-size: 1.3rem; transition: color 0.2s; }
     .social-links a:hover { color: var(--accent); }
 
     /* ── RESPONSIVE ── */
@@ -847,8 +791,6 @@
     <div class="footer-content">
       <div class="footer-logo">● TechHelp Mobile</div>
       <p>© 2025 TechHelp Mobile — Proudly Serving Sioux Falls Since 2020</p>
-      <p>Family Owned & Operated | Licensed & Insured | Member of Sioux Falls Chamber of Commerce</p>
-      <p>Supporting Local: Augustana University | Washington Pavilion | Sioux Falls Senior Centers</p>
       <div class="social-links">
         <a href="#" aria-label="Facebook">📘</a>
         <a href="#" aria-label="Twitter / X">🐦</a>
@@ -858,7 +800,6 @@
   </footer>
 
   <script>
-    // Fade-in on scroll
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
